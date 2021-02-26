@@ -7,6 +7,8 @@ $(document).ready(function () {
 		autoplaySpeed: 4000,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
+		dots: false,
+
 
 		responsive: {
 			// breakpoint from 600 up
