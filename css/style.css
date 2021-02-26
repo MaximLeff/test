@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300;400;500&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.head_wrapper .btn-outline-success:not(:disabled):not(.disabled):active,
+.call_back .btn-primary:not(:disabled):not(.disabled).active,
+.banner .btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #fdb819;
+  border: none;
+}
+
+.container .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: none;
+}
+
+.navbar .form-control:focus,
+.call_back .form-control:focus,
+.call_back .custom-select:focus {
+  border-color: #fdb819;
+  box-shadow: 0 0 0 0.2rem #fdb81940;
+}
+
+body p {
+  font-family: "Rubik", sans-serif;
+}
+
+.banner .btn-primary:hover {
+  background-color: #fdb819;
+}
+
+.contacts h2, .reviews_wrapper h2, .questions_wrapper h2, .stages_of_work h2, .call_back h2, .block_wrapper h2 {
+  border-bottom: 1px solid;
+  font-family: "Rubik", sans-serif;
+  color: #212121;
+  font-weight: 300;
+  font-size: 28px;
+}
+.contacts h2 span, .reviews_wrapper h2 span, .questions_wrapper h2 span, .stages_of_work h2 span, .call_back h2 span, .block_wrapper h2 span {
+  font-weight: 500;
+}
+
+.panel {
+  background: #212121;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+}
+.panel .btn {
+  font-size: 12px;
+  color: #7d7d7d;
+}
+.panel .btn:hover {
+  color: #fdb819;
+  cursor: pointer;
+}
+.panel .btn.active {
+  color: #fff;
+}
+.panel .container span {
+  font-weight: 300;
+}
+.panel .container span + a {
+  color: #fff;
+}
+.panel .container span.user {
+  color: #8b8b8b;
+  font-weight: 400;
+  padding-left: 20px;
+  position: relative;
+}
+.panel .container span.user::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-position: -139px 31px;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 0;
+}
+
+.head_wrapper {
+  background-color: #f6f6f6;
+}
+.head_wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+.head_wrapper .search form input {
+  padding-right: 80px;
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 17px 20px;
+}
+.head_wrapper .search form button {
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  right: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.head_wrapper .phone li {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.head_wrapper .basket {
+  font-family: "Rubik", sans-serif;
+  padding-left: 40px;
+  position: relative;
+}
+.head_wrapper .basket::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  background-position: -172px 40px;
+  width: 31px;
+  height: 36px;
+  left: 0;
+  top: 0;
+}
+.head_wrapper .basket span.quantity {
+  position: relative;
+  z-index: 5;
+  font-size: 11.5px;
+  position: absolute;
+  left: 25px;
+  top: 2px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fdb819;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+.head_wrapper .basket span.quantity + div {
+  font-weight: 300;
+  font-size: 13px;
+}
+.head_wrapper .basket span.quantity + div span {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar {
+  background-color: #f4f4f4;
+}
+.navbar .navbar-collapse {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .navbar-collapse .nav-item a {
+  padding: 13px 18px;
+}
+.navbar .navbar-collapse .nav-item a:hover {
+  background-color: #fdb819;
+}
+.navbar .navbar-collapse .nav-item.active a {
+  padding: 13px 18px;
+  background-color: #212121;
+  color: #fff;
+}
+
+.banner {
+  background-image: url(../img/gearbox_repair.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+.banner .container {
+  padding: 70px 0;
+}
+.banner h1 {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.56);
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+.banner h1 + p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner span {
+  color: #ffb736;
+}
+.banner a {
+  font-family: "Rubik", sans-serif;
+  background-color: #fdb819;
+  color: #000;
+  border-radius: 2px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.breadcrumb_wrapper {
+  background-color: #f6f6f6;
+}
+.breadcrumb_wrapper .breadcrumb {
+  font-size: 12px;
+}
+.breadcrumb_wrapper .breadcrumb li,
+.breadcrumb_wrapper .breadcrumb a {
+  color: #606060;
+  font-weight: 600;
+}
+.breadcrumb_wrapper .breadcrumb-item.active::before {
+  content: "";
+  padding: 2px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+.block_wrapper {
+  background-color: #f6f6f6;
+}
+.block_wrapper p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+}
+.block_wrapper h3 {
+  font-weight: 300;
+}
+.block_wrapper h3 span {
+  font-weight: 500;
+}
+.block_wrapper img {
+  max-width: 505px;
+  width: 100%;
+}
+
+.block_wrapper.price {
+  background-color: #fff;
+}
+.block_wrapper.price .table-bordered td,
+.block_wrapper.price .table-bordered th {
+  border: 2px solid #ddd;
+}
+.block_wrapper.price .cost {
+  width: 100px;
+  vertical-align: middle;
+}
+.block_wrapper.price .table thead.thead-dark th {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  background-color: #fcce7b;
+  border-top: none;
+}
+.block_wrapper.price .table tbody tr {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+}
+.block_wrapper.price .table tbody tr td {
+  text-align: right;
+}
+.block_wrapper.price h3 {
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+.block_wrapper.price .advantages p {
+  font-size: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+.block_wrapper.price .advantages .delivery,
+.block_wrapper.price .advantages .returns,
+.block_wrapper.price .advantages .payments,
+.block_wrapper.price .advantages .gifts {
+  padding-left: 95px;
+  position: relative;
+}
+.block_wrapper.price .advantages .delivery::after,
+.block_wrapper.price .advantages .returns::after,
+.block_wrapper.price .advantages .payments::after,
+.block_wrapper.price .advantages .gifts::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  width: 90px;
+  height: 70px;
+  top: 0;
+  left: 0;
+}
+.block_wrapper.price .advantages .delivery::after {
+  background-position: 0px 0px;
+}
+.block_wrapper.price .advantages .returns::after {
+  background-position: -88px 0px;
+  width: 60px;
+  left: 15px;
+}
+.block_wrapper.price .advantages .payments::after {
+  background-position: -145px 0px;
+  width: 70px;
+  left: 10px;
+}
+.block_wrapper.price .advantages .gifts::after {
+  background-position: 68px 0px;
+  width: 70px;
+  left: 10px;
+}
+.block_wrapper.price .advantages p + p {
+  font-size: 12px;
+  color: #b3b7b8;
+}
+.block_wrapper.price .line {
+  border-bottom: 2px solid;
+}
+
+.call_back {
+  background-color: #eff0f2;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+.call_back form {
+  background-color: #fff;
+}
+.call_back form span {
+  color: red;
+}
+.call_back form .btn-primary {
+  color: #212121;
+  background-color: #fdb819;
+  border: none;
+  font-size: 12px;
+}
+
+.stages_of_work ol {
+  counter-reset: list;
+}
+.stages_of_work li {
+  padding-left: 35px;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.stages_of_work li:before {
+  position: absolute;
+  counter-increment: list;
+  content: counter(list);
+  display: inline-block;
+  text-align: center;
+  left: 0;
+  font-weight: 500;
+  width: 22px;
+  height: 22px;
+  background-color: #fdb819;
+}
+
+.questions_wrapper h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #606060;
+  font-size: 20px;
+}
+.questions_wrapper li a {
+  font-weight: 300;
+  font-size: 14px;
+  color: #606060;
+}
+.questions_wrapper li a:hover {
+  color: #fdb819;
+}
+
+.reviews_wrapper {
+  background-color: #f6f6f6;
+}
+.reviews_wrapper .nav {
+  top: 0;
+  right: 10px;
+}
+.reviews_wrapper .nav span {
+  color: #363636;
+  line-height: 1;
+  cursor: pointer;
+}
+.reviews_wrapper .nav figure {
+  width: 2px;
+  height: 30px;
+  background-color: #e2e2e2;
+  margin: 0 5px;
+}
+.reviews_wrapper .content {
+  background-color: #fff;
+  position: relative;
+  margin: 15px 10px 10px 10px;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+.reviews_wrapper .content span {
+  font-weight: 500;
+  color: #000;
+}
+.reviews_wrapper .content::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #fff;
+  transform: rotate(-45deg);
+  top: -8px;
+  left: 32px;
+}
+.reviews_wrapper .content:hover::after {
+  box-shadow: 5px -5px 10px -5px #8787874d;
+}
+.reviews_wrapper .content:hover {
+  box-shadow: 0 0 10px #8787874d;
+  cursor: pointer;
+}
+
+.contacts h2 {
+  border: none;
+}
+.contacts p,
+.contacts li {
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  color: #212121;
+}
+.contacts .work_time {
+  font-size: 12px;
+  color: #363636;
+}
+.contacts i {
+  margin-right: 12px;
+}
+.contacts .contacts_phone {
+  justify-content: center;
+}
+.contacts .map {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contacts .map iframe {
+  height: 300px;
+}
+
+footer {
+  background-color: #212121;
+  color: #9a9a9a;
+  line-height: 1;
+}
+footer .social_wrapper {
+  font-size: 14px;
+}
+footer a {
+  color: #9a9a9a;
+}
+footer a:hover {
+  text-decoration: none;
+}
+footer li i {
+  font-size: 19px;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+}
+footer i.fa-google-plus-g {
+  background-color: #e04a39;
+  top: 0;
+  transition: 0.6s ease;
+}
+footer i.fa-google-plus-g:hover {
+  box-shadow: -5px 5px 25px 5px #e04a398c;
+  text-shadow: 0 5px 11px #505050b3;
+  top: -5px;
+}
+footer i.fa-facebook-f {
+  background-color: #3b5a9a;
+  top: 0;
+  transition: 0.6s ease;
+}
+footer i.fa-facebook-f:hover {
+  box-shadow: 0px 5px 25px 5px #3b5a9a8c;
+  text-shadow: 0 5px 11px #505050b3;
+  top: -5px;
+}
+footer i.fa-youtube {
+  background-color: #cc2129;
+  top: 0;
+  transition: 0.6s ease;
+}
+footer i.fa-youtube:hover {
+  box-shadow: 5px 5px 25px 5px #cc21298c;
+  text-shadow: 0 5px 11px #505050b3;
+  top: -5px;
+}
+footer .social {
+  justify-content: center;
+}
+footer .social li + li {
+  margin-left: 10px;
+}
+footer .sections_wrapper,
+footer .information_wrapper,
+footer .payment_wrapper {
+  color: #fff;
+  font-size: 15px;
+}
+footer .sections_wrapper li a,
+footer .information_wrapper li a,
+footer .payment_wrapper li a {
+  line-height: 1.9;
+  font-family: "Rubik", sans-serif;
+}
+footer .sections_wrapper li a:hover,
+footer .information_wrapper li a:hover,
+footer .payment_wrapper li a:hover {
+  color: #fdb819;
+}
+footer .payment_wrapper .visa {
+  display: block;
+  background-image: url(../img/sprite.png);
+  width: 130px;
+  height: 40px;
+  background-position: 0px 40px;
+}
+footer .information_wrapper li {
+  position: relative;
+}
+footer .information_wrapper li:before {
+  content: "";
+  top: 50%;
+  left: -10px;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fdb819;
+}
+
+@media screen and (min-width: 576px) {
+  .panel {
+    font-size: 12px;
+  }
+
+  .phone {
+    padding-left: 40px;
+  }
+  .phone::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/sprite.png);
+    background-position: -225px 33px;
+    width: 30px;
+    height: 30px;
+    top: 20%;
+    left: 0;
+  }
+  .phone li {
+    font-size: 15px;
+  }
+
+  .table tbody tr td {
+    padding-right: 40px;
+  }
+
+  .banner .container {
+    padding: 150px 0;
+  }
+  .banner h1 {
+    font-size: 53px;
+  }
+  .banner h1 + p {
+    font-size: 33px;
+  }
+  .banner a {
+    font-size: 20px;
+  }
+
+  .block_wrapper.price .cost {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts .contacts_phone {
+    justify-content: left;
+  }
+
+  .call_back {
+    background-image: url(../img/consultant.jpg);
+    background-position-x: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .contacts .map {
+    position: absolute;
+    left: 50%;
+  }
+  .contacts .map iframe {
+    height: 100%;
+  }
+
+  footer .social {
+    justify-content: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .call_back {
+    background-image: url(../img/consultant.jpg);
+    background-position-x: center;
+  }
+}
